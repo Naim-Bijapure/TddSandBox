@@ -1,3 +1,4 @@
+import axios from 'axios'
 
 export function cool() {
     return {N:'pronoob'} ;
@@ -55,3 +56,20 @@ export function  fetchWithPromise() {
 export function testMock(cb) {
       cb('N'); 
 }
+
+export  function  testApi() {
+ 
+ return axios.get("https://jsonplaceholder.typicode.com/todos/1")
+}
+
+export class Users {
+  static all() {
+    return axios.get("https://jsonplaceholder.typicode.com/todos/1").then(resp => resp.data);
+  }
+}
+
+
+export function testMockModule(a) {
+ return a+a;
+}
+
