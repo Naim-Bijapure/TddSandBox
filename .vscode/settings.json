@@ -1,0 +1,4 @@
+{
+   "jest.enableCodeLens": true,
+   "jest.showCoverageOnLoad": true
+}
