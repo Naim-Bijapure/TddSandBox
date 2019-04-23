@@ -4,7 +4,6 @@ import sum from "../app/sum";
 
 
 
-
 jest.mock('../app/sum.js');
 
 jest.mock('axios');
